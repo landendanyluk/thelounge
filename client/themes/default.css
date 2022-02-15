@@ -33,3 +33,40 @@
 		border-radius: 0;
 	}
 }
+
+/* Utherverse tweaks */
+
+.logo-container {
+	margin-top: 1rem;
+}
+
+/* hide 'Real Name' field from /connect */
+#connect .connect-row.real-name {
+	display: none;
+}
+
+/* hide 'Channels' field from /connect */
+#connect .connect-row.channels {
+	display: none;
+}
+
+/* hide 'Leave Message' field from /connect */
+#connect .connect-row.leave-message {
+	display: none;
+}
+
+/* hide settings and help pages from sidebar */
+#footer span[aria-label="Settings"],
+#footer span[aria-label="Help"] {
+	display: none;
+}
+
+/* hide hostmasks */
+#chat .hostmask {
+	display: none;
+}
+
+/* hide real name */
+#chat .realname {
+	display: none;
+}

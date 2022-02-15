@@ -19,6 +19,8 @@ const favicon = document.getElementById("favicon");
 const faviconNormal = favicon.getAttribute("href");
 const faviconAlerted = favicon.dataset.other;
 
+Vue.prototype.QueryString = window.location.hash;
+
 new Vue({
 	el: "#viewport",
 	router,

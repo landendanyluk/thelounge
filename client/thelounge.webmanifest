@@ -1,7 +1,7 @@
 {
-	"name": "The Lounge",
-	"short_name": "The Lounge",
-	"description": "Self-hosted web IRC client",
+	"name": "Utherverse Support",
+	"short_name": "Utherverse Support",
+	"description": "Utherverse Support IRC",
 	"start_url": ".",
 	"display": "standalone",
 	"theme_color": "#415364",
@@ -42,12 +42,6 @@
 			"type": "image/png",
 			"purpose": "maskable any",
 			"sizes": "512x512"
-		},
-		{
-			"src": "img/logo-grey-bg.svg",
-			"type": "image/svg+xml",
-			"purpose": "maskable any",
-			"sizes": "513x513"
 		}
 	]
 }

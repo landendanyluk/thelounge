@@ -206,7 +206,7 @@
 
 			<h2>User preferences</h2>
 			<div class="connect-row">
-				<label for="connect:nick">Nick</label>
+				<label for="connect:nick">Profile Name</label>
 				<input
 					id="connect:nick"
 					v-model="defaults.nick"
@@ -219,7 +219,7 @@
 				/>
 			</div>
 			<template v-if="!config.useHexIp">
-				<div class="connect-row">
+				<div v-show="!/username/.test(this.QueryString)" class="connect-row">
 					<label for="connect:username">Username</label>
 					<input
 						id="connect:username"
@@ -231,7 +231,7 @@
 					/>
 				</div>
 			</template>
-			<div class="connect-row">
+			<div class="connect-row real-name">
 				<label for="connect:realname">Real name</label>
 				<input
 					id="connect:realname"
@@ -241,7 +241,7 @@
 					maxlength="300"
 				/>
 			</div>
-			<div class="connect-row">
+			<div class="connect-row leave-message">
 				<label for="connect:leaveMessage">Leave message</label>
 				<input
 					id="connect:leaveMessage"
@@ -277,7 +277,7 @@ the server tab on new connection"
 				</div>
 			</template>
 			<template v-else-if="!defaults.uuid">
-				<div class="connect-row">
+				<div class="connect-row channels">
 					<label for="connect:channels">Channels</label>
 					<input
 						id="connect:channels"
@@ -388,7 +388,7 @@ the server tab on new connection"
 					</div>
 				</template>
 				<div v-else-if="defaults.sasl === 'external'" class="connect-sasl-external">
-					<p>The Lounge automatically generates and manages the client certificate.</p>
+					Utherverse Support automatically generates and manages the client certificate.
 					<p>
 						On the IRC server, you will need to tell the services to attach the
 						certificate fingerprint (certfp) to your account, for example:

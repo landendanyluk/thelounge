@@ -4,7 +4,7 @@
 
 :root {
 	/* Main text color */
-	--body-color: pink;
+	--body-color: #222;
 
 	/* Secondary text color, dimmed. Make sure to keep contrast WCAG 2.0 AA compliant on var(--window-bg-color) */
 	--body-color-muted: #767676;
